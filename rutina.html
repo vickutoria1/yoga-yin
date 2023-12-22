@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutina</title>
+    <link rel="icon" href="./img/favicon.png" type="favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./form.js"></script>
+    <script src="./validar.js"></script>
+    <link rel="stylesheet" href="./rutina.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="registro">
+            <h1>Nuevo registro</h1>
+        </div>
+    </header>
+
+    <div class="background">
+        <section class="form">
+            <div id="userInput">
+                <input type="text" id="fechaInput" placeholder="DD/MM/AAAA" maxlength="10"
+                    pattern="\d{1,2}/\d{1,2}/\d{4}">
+                <br>
+                <input type="text" id="diaInput" placeholder="Día de la semana">
+                <br>
+                <input type="text" id="horaInput" placeholder="Horas (HH:MM)" maxlength="5" pattern="\d{1,2}:\d{2}">
+                <br>
+                <select id="ejercicioInput">
+                    <option value="Piernas">Piernas</option>
+                    <option value="Brazos">Brazos</option>
+                    <option value="Abdomen">Abdomen</option>
+                    <option value="Gluteo">Glúteo</option>
+                    <option value="Espalda">Espalda</option>
+                </select>
+
+                <div id="botones1">
+                    <button onclick="guardarInformacion()">Guardar</button>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <div class="info">
+
+            <ul id="infoList"></ul>
+            <div id="estadisticas">
+            </div>
+            <p>Parte del cuerpo mas trabajada: <span id="ejercicioMasTrabajado"></span></p>
+        </div>
+        <div class="a">
+        <button onclick="borrarInformacion()">Borrar Todo</button>
+        <a href="./index.html" id="botones2">Volver al inicio</a>
+        </div>
+    </div>
+
+
+
+    <footer id="piedepagina" class="pt-1">
+        <div class="container" style="padding-top: 40px;">
+            <div="row">
+                <div class="col-xl-12 text-center fs-1">
+                    <a href="https://es-la.facebook.com/" class="bi bi-facebook text-white"></a>
+                    <a href="https://web.whatsapp.com/" class="bi bi-whatsapp text-white"></a>
+                    <a href="https://www.instagram.com/" class="bi bi-instagram text-white"></a>
+                </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="row row-cols-5 py-3 my-3 border-top">
+            </div>
+            <div class="text-center pb-4 text-white">
+                <p>Copyrigth - All rights reserved © 2023</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+    background: #ad5389;
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+    background: linear-gradient(to right, #3c1053, #ad5389);
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    max-width: 90px;
+    max-height: 90px
+}
+
+.logo h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+@media (max-width: 400px) {
+    .logo img {
+        width: 60px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+}
+
+h1 {
+    background: linear-gradient(to top, #3c1053, #e051a7);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 36px;
+}
+
+#boton {
+    background: #ad5389;
+    background: -webkit-linear-gradient(to top, #3c1053, #ad5389);
+    background: linear-gradient(to top, #3c1053, #ad5389);
+    width: 130px;
+    border: none;
+}
+
+#piedepagina {
+    background: #ad5389;
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+    background: linear-gradient(to right, #3c1053, #ad5389);
+    height: 30vh;
+    display: grid;
+    align-self: center;
+    padding-top: 80px;
+}
+
+#footer {
+    background-color: #F5EDF7;
+}
